@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Counter</title>
+</head>
+<body>
+    <p id="counter"></p>
+    <script>
+        let count = localStorage.getItem('reloadCount') || 0;
+        count++;
+        localStorage.setItem('reloadCount', count);
+        document.getElementById('counter').innerText = "Page reload count: " + count;
+    </script>
+</body>
+</html>
