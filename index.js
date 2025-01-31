@@ -1,18 +1,35 @@
-import './index.css';
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+// const readline=require("readline")
+// const rl=readline.createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+// })
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// let variable=""
+// rl.question("Enter your name:",(data)=>{
+//     variable=data
+//     console.log("Hello,",data);
+// })
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+// console.log(variable);
+
+// const os=require("os")
+// console.log(os.homedir());
+// console.log(os.tmpdir());
+// console.log(os.cpus());
+
+// console.log(os.arch());
+// console.log(os.platform());
+
+// console.log(os.hostname());
+// console.log(os.totalmem());
+// console.log(os.version());
+// console.log(os.freemem());
+
+const path=require("path")
+
+// console.log(__dirname);
+// console.log(__filename);
+console.log(path.basename("D:\server\index.js"));
+console.log(path.extname("sample.txt"));
+console.log(path.join("folder","index.js"));
+console.log(path.parse("D:\server\index.js"));
